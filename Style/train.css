@@ -1,0 +1,71 @@
+body {
+    background: #292929;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.image {
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 248, 220, 0);
+    margin-left: 10px;
+    transition: 0.4s;
+}
+img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+img:hover {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.image:active {
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 248, 220, 0);
+    margin-left: 10px;
+    transform: rotate3d(0, 1, 0, 180deg);
+    transition: 0.4s;
+}
+.image::before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 5px;
+    background: rgb(160, 201, 224);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.image:hover::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: rgb(160, 201, 224);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.4s;
+}
+.image:hover::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: rgb(160, 201, 224);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.4s;
+}
+.back {
+    width: 100%;
+    height: 100vh;
+}

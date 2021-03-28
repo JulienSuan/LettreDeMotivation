@@ -1,0 +1,658 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+a {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background:url(/Ressources/lettre.jpg);
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+.owl-carousel .owl-theme {
+    height: 10%;
+}
+.item {
+    width: 100%;
+    height: 100vh;
+}
+.intro2 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    animation: afterName 2s 3s forwards;
+}
+.intro22 {
+    display: flex;
+}
+.huh {
+    position: absolute;
+    transform: translateX(-150px) translateY(10px) rotate(-20deg);
+    z-index: -10;
+    bottom:0;
+}
+.huh-title {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    bottom:0;
+    transform: translateX(-310px);
+    text-shadow: rgba(0, 0, 0, 0.774) 2px 2px;
+}
+.cont-text {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+.name {
+    margin:0;
+    font-size: 4em;
+    color:whitesmoke;
+    letter-spacing: 5px;
+    opacity: 0;
+    position: relative;
+}
+@keyframes afterName {
+    to {
+        height: 25vh;
+        text-shadow: rgba(0,0,0,05) 1px 2px 2px;
+    }
+}
+.text, .fa-map-marker-alt {
+    margin-right: 10px;
+    color:whitesmoke;
+}
+.text {
+    transform: translateY(100px) scale(0.5);
+    opacity: 0;
+    animation: text 0.8s 2s forwards;
+}
+.fa-map-marker-alt {
+    transform: translateX(100);
+    position: absolute;
+    margin-left: 5px;
+}
+@keyframes text {
+    to {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+.name:nth-child(1) {
+    transform: translate(-200px, -100px);
+    animation: intro 1s forwards 0.4s ease-in-out;
+}
+.name:nth-child(2) {
+    transform: translate(-150px, 100px);
+    animation: intro 1s forwards 0.5s ease-in-out;
+}
+.name:nth-child(3) {
+    transform: translate(150px, 150px);
+    animation: intro 1s forwards 0.6s ease-in-out;
+}
+.name:nth-child(4) {
+    animation: intro 1s forwards 0.7s;
+    transform: translate(150px, -150px);
+}
+.name:nth-child(5) {
+    animation: intro 1s forwards 0.8s ease-in-out;
+    transform: translate(250px, -200px);
+}
+.name:nth-child(6) {
+    transform: translate(350px, 200px);
+    animation: intro 1s forwards 0.8s ease-in-out;
+}
+@keyframes intro {
+    to {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+.item1 {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    background-image: url(/Ressources/images/lettre_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.932) -20px 0px 60px 20px;
+}
+.filter {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.932);
+    position: absolute;
+    animation: filter 2s 3s forwards;
+}
+@keyframes filter {
+    to {
+        background: rgba(0, 0, 0, 0.384);
+    }
+}
+.item2 {
+    background-color: rgb(19, 19, 19);
+    background-image: url(/Ressources/images/lettre_02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.item3 {
+    background-color: rgb(46, 46, 46);
+    background-image: url(/Ressources/images/lettre_03.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.item4 {
+    background-color: rgb(88, 88, 88);
+    background-image: url(/Ressources/images/lettre_04.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title {
+    position: absolute;
+    color: whitesmoke;
+
+}
+.footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #01000f;
+    position: absolute;
+    bottom:0;
+    transform: translateY(20vh);
+    transition: 1s ease-in-out;
+    background-size: cover;
+    background-position: 50%; 
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: #00000a 0 0 30px 20px;
+}
+.click {
+    color:whitesmoke;
+    position: absolute;
+    margin-bottom: 7vh;
+    transform: scale(1);
+    animation: show 1s forwards;
+    animation: click 3.5s 3.5s infinite ease-in-out, show 1s forwards 3s;
+    opacity: 0;
+}
+.lien {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+@keyframes show {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes click {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    50% {
+        transform:;
+    }
+    89% {
+        transform: scale(0.95);
+        opacity: 1;
+    }
+    
+    90% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.click-cont {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+
+}
+.owl-theme .owl-nav {
+    opacity: 0;
+    animation: nav 1s 4s forwards;
+}
+@keyframes nav {
+    to {
+        opacity: 1;
+    }
+}
+.footer-anim {
+    transform: translateY(0vh);
+}
+.btn-anim {
+    transform: translateY(-20vh);
+}
+.cont-btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end ;
+    width: 100vw;
+    height: 100vh;
+}
+.footer-btnn {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(233, 15, 15, 0);
+    cursor: pointer;
+    border: whitesmoke solid 2px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    transition: 1s ease-in-out;
+    z-index: 100;
+}
+.nom {
+    color:whitesmoke;
+    margin:0;
+    font-size: 2em;
+    transform: translateY(100px);
+    opacity: 0;
+    animation: nom 1s 1s forwards
+}
+@keyframes nom {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes after {
+    to {
+        transform: translate(-50% -50%);
+    }
+}
+.footer-title {
+    color:whitesmoke;
+    text-shadow: rgba(0,0,0,05) 0px 2px 2px;
+    margin:0;
+    position: absolute;
+    margin-top: 10px;
+    height: 0;
+    transform: translateY(-100px) translateX(-2px);
+    transition: 1.5s ease-out;
+    z-index: -2;
+    letter-spacing: 2px;
+    border-bottom: whitesmoke 2px solid;
+    height: 38px;
+}
+.title-anim {
+    transform: translateY(0px) translateX(-2px);
+}
+.icons {
+    display: flex;
+    width: 25%;
+    position: absolute;
+    height: 20vh;
+    justify-content:space-around;
+    align-items: center;
+    opacity: 0;
+    transition: 2s ease-in-out; 
+    transform: translateY(100px);
+}
+.fa-discord {
+    color:whitesmoke;
+    cursor:pointer;
+    position: relative;
+    transition: 0.3s;
+}
+.fa-discord:hover {
+    color:#7289da
+}
+.fa-discord:hover:after {
+    content: "";
+    background-color: whitesmoke;
+    border-radius: 30%;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 0px;
+    z-index: -10;
+    top:5px;
+    opacity: 1;
+}
+.fa-instagram {
+    color: whitesmoke;
+    cursor:pointer;
+    position: relative;
+    transition: 0.3s;
+}
+.fa-instagram:hover {
+    color:rgb(255, 255, 255);
+}
+.fa-envelope {
+    color: whitesmoke;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.fa-envelope:hover {
+    color: #BB001B;
+}
+.fa-instagram:hover:after {
+    content: "";
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    border-radius: 30%;
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    left: 0px;
+    z-index: -10;
+    top:5px;
+    opacity: 1;
+}
+.num {
+    position: absolute;
+    bottom:0;
+    color:whitesmoke;
+    text-shadow: rgba(0,0,0,05) 2px 2px 2px;
+    transform: scale(0) translateY(100px);
+    transition: 2s ease-in-out;
+}
+.parcours {
+    width: 75%;
+    margin-top: 125px;
+    height: 70%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.774);
+    border-radius:10px;
+    border:rgb(0, 0, 0) 1px;
+    border-style: dotted;
+    color:whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.774) 0 0 20px 5px;
+    padding: 30px;
+    overflow: scroll;
+}
+.image-moi {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/Ressources/150319443_1021353225024538_1737369197660365552_n.jpg);
+    background-size: cover;
+    min-height: 360px;
+    background-position: center;
+    margin: 30px 0;
+    transition: 0.6s ease-in-out; 
+    cursor:pointer;
+    filter:grayscale(0.8);
+}
+.image-moi:hover {
+    filter:grayscale(0);
+}
+.image-college {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/Ressources/Bâtiments-publics-Collège-Saint-Jean-Baptiste-à-Guérande.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 30px 0;
+    cursor:pointer; 
+    transition: 0.6s ease-in-out; 
+}
+.image-college:hover {
+    transform: scale(1.01);
+}
+.image-lycee {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/Ressources/Capture.PNG);
+    background-size: cover;
+    background-position: center;
+    margin: 30px 0;
+    cursor:pointer;
+    transition: 0.6s ease-in-out; 
+}
+.image-lycee:hover {
+    transform: scale(1.01);
+}
+.image-lycee2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/Ressources/lycee_la_mennais_slider8.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 30px 0; 
+    cursor:pointer;
+    transition: 0.6s ease-in-out; 
+}
+.image-lycee2:hover {
+    transform: scale(1.01);
+}
+.image-lycee3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/Ressources/photo_128854.jpg);
+    background-size: cover;
+    margin: 30px 0; 
+    cursor:pointer;
+    transition: 0.6s ease-in-out; 
+}
+.image-lycee3:hover {
+    transform: scale(1.01);
+}
+.college-title, .lycee-title {
+    text-shadow: rgba(0, 0, 0, 0.774) 0 0 2px;
+}
+.lycee-title {
+    text-shadow: rgba(0, 0, 0, 0.774) 0 0 4px;
+}
+.transi-img {
+    width: 100%;
+    height: 5px;
+    background:whitesmoke;
+    border-radius: 10px;
+}
+
+.parcours::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
+    background: rgba(0, 0, 0, 0.247);
+    border-radius: 10px;
+}
+.parcours::-webkit-scrollbar-thumb {
+    background: whitesmoke;
+    border-radius: 10px;
+}
+.icons-anim {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.num-anim {
+    transform: scale(1);
+    opacity: 1;
+}
+.parcours-cont {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parcours-title {
+    text-align: center;
+    margin: 0;
+    top:0;
+    margin-bottom: 10px;
+    font-size: 5em;
+    text-shadow: rgba(0, 0, 0, 0.733) 2px 2px 10px;
+    color: rgb(231, 230, 230);
+    cursor: pointer;
+    transition: 1s;
+}
+.parcours-title-hover {
+    opacity: 1;
+}
+.parcours-title:after {
+    content:"";
+    display: block;
+    position: relative;
+    bottom:0;
+    width: 0%;
+    height: 12px;
+    background: rgb(231, 230, 230);
+    transition: 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.733) 2px 2px 10px;
+}
+.parcours-title:hover:after {
+    width: 100%;
+}
+.image-marrais {
+    background-image: url(/Ressources/visiter-les-marais-salants-avec-un-paludier.webp);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    margin: 30px 0; 
+    cursor:pointer;
+    transition: 0.6s ease-in-out;
+    filter: grayscale(0.5); 
+}
+.image-marrais:hover {
+    filter: grayscale(0); 
+}
+.text-marrais {
+    font-size: 1.2em;
+    text-align: center;
+}
+.title-marrais {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.info-marrais {
+    text-align: center;
+    font-size: 1.1em;
+}
+p {
+    text-align:justify;
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .icons {
+        width: 60%;
+    }
+    .footer-anim {
+        height: 30vh;
+    }
+    .icons-anim {
+        height: 30vh;
+    }
+    .owl-theme .owl-nav {
+        font-size: 2em;
+    }
+    .btn-anim {
+        transform: translateY(-30vh);
+    }
+    .image-moi {
+        filter:grayscale(0);
+    }
+}
+@media (max-width:768px) {
+    .icons {
+        width: 100%;
+    }
+    .image-moi {
+        filter:grayscale(0);
+    }
+    .parcours-title {
+        font-size: 3em;
+    }
+    .footer-anim {
+        height: 30vh;
+    }
+    .btn-anim {
+        transform: translateY(-30vh);
+    }
+    .icons-anim {
+        height: 30vh;
+    }
+    .intro2 {
+        font-size: 0.8em;
+    }
+    .text {
+        margin-left: 10px;
+    }
+    .parcours {
+        width: 100%;
+    }
+    p {
+        font-size: 0.8em;
+    }
+    p.adresse {
+        font-size: 1em;
+    }
+}
+@media (max-height:700px) {
+    p {
+        font-size: 0.8em;
+    }
+    p.adresse {
+        font-size: 1em;
+    }
+}
+@media (max-height:600px) {
+    p {
+        font-size: 0.6em;
+    }
+    p.adresse {
+        font-size: 1em;
+    }
+}

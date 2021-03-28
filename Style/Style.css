@@ -1,0 +1,41 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: #dadada;
+}
+.container {
+    background-color: rgba(0, 191, 255, 0);
+}
+.carte {
+    background-color: firebrick;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    width: 500px;
+    margin: 200px auto 0 auto;
+    height: 600px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px 5px black;
+}
+.img {
+    background-color: rgb(54, 54, 54);
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+.footerText {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: floralwhite;
+    height: 100px;
+}
+.kirua {
+    border-radius: 10px;
+}

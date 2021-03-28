@@ -1,0 +1,585 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: #0a0f15;
+}
+::-webkit-scrollbar {
+    background: url(/Ressources/scroll.jpg);
+    width: 0px;
+    opacity: 0.5;
+    border-left: rgba(245, 245, 245, 0.425) solid;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(245, 245, 245, 0.253);
+    border: rgba(245, 245, 245, 0.425) solid 2px;
+}
+
+.video {
+    position: relative;
+    z-index: -1;
+    filter: blur(10px);
+    animation: video 1.2s forwards ease-in-out;
+    width: 100%;
+}
+
+.debut {
+    height: 100%;
+    width: 100%;
+    background: url(/Ressources/Sans-titre-5.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes video {
+    to {
+    filter: blur(0px);
+    }
+}
+@keyframes title {
+    to {
+        transform: scale(0.6);
+    }
+}
+.title:hover {
+    opacity: 0.9;
+    transform: scale(0.7) !important;
+}
+.title:active {
+    transform: scale(0.65) !important;
+}
+.footer {
+    width: 100%;
+    height: 70vh;
+    background: url(/Ressources/Sans-titre-3.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+.header {
+    background: #1b2838;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top:0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 2px 2px;
+    z-index: 100000;
+    transition: 0.3s all;
+    justify-content: center;
+    transform: translateY(-102px);
+    animation: start 0.8s forwards ease-in-out;
+    animation-delay: 0.2s;
+}
+.cont-carousel {
+    width: 100%;
+    background: url(/Ressources/dungeon-texture-gradient.png);
+}
+
+.img {
+    position: absolute;
+    width: 20%;
+
+}
+
+.text {
+    background: rgba(218, 122, 87, 0);
+    position: absolute;
+    width: 50%;
+    height: 25vh;
+    margin-top: 17%;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    align-content: flex-start;
+    align-items: center;
+    color:rgb(212, 212, 212);
+    font-size: 1.2em;
+
+    padding: 20px;
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
+}
+#cont {
+    background: #1b2838;
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color:rgb(212, 212, 212);
+}
+.bigCont {
+    width: 100%;
+    background-color: #1b2838;
+    height: 220vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
+}
+h2 {
+    margin:0;
+    margin-top: 20px;
+    z-index: 2;
+    position: relative;
+}
+.h1 {
+    color:rgb(212, 212, 212);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.download {
+    height: 20vh;
+    width: 100%;
+    background-color: #101822;
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    z-index: 1000;
+    position: relative;
+    
+}
+.h11 {
+    color:rgb(212, 212, 212);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 2;
+}
+.icons {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: #101822;
+}
+.imgg {
+    margin-top: 10px;
+    height: 70%;
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.imgg:hover {
+    transform: scale(0.9);
+}
+.imgg:active {
+    transform: scale(0.8);
+}
+.gif:hover {
+    transform: scale(1.1);
+}
+.gif {
+    z-index: 1;
+    transition: 0.2s;
+    cursor: pointer;
+}
+h2 {
+    margin-bottom: 10px;
+}
+.gif:active {
+    transform: scale(1.05)
+}
+.img {
+    transition: 0.2s;
+}
+.img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.img:active {
+    transform: scale(1.1);
+}
+.transi {
+    height: 20vh;
+    width: 100%;
+    background: url(/Ressources/dungeon-texture-gradient.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transi2 {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(#102521, #0a1614);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px;
+    position: relative;
+
+}
+.transi3 {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(#2b283c, #0c1818);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px;
+    position: relative;
+
+}
+.transi4 {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(#1b2838, #101822);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px;
+    position: relative;
+
+}
+.transi5 {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(#0b1016, #090d13);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px;
+    position: relative;
+
+}
+.minilogo {
+    cursor: pointer;
+    align-self: center;
+    align-content: center;
+    order: 1;
+    position: absolute;
+    left:16px;
+    height: 100%;
+    bottom: 16px;
+}
+@media (max-width: 1200px) {
+    #cont {
+        width: 60%;
+    }
+}
+@media (max-width: 800px) {
+    .aaa {
+        justify-content: flex-end;
+    }
+    #cont {
+        width: 75%;
+    }
+    .text {
+        width: 75%;
+        height: 40%;
+    }
+    .title {
+        transform: scale(0.4);
+    }
+    .title:hover {
+        transform: scale(0.35);
+    }
+    .header {
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 570px) {
+    
+    #cont {
+        width: 90%;
+    }
+    .text {
+        height: 20%;
+    }
+}
+@media (max-width: 570px) {
+    
+    #cont {
+        width: 90%;
+    }
+    .text {
+        height: 20%;
+    }
+}
+@media (max-width: 360px) {
+    
+    .text {
+        font-size: 1em;
+        width: 100%;
+    }
+}
+@media (max-width: 650px) {
+    
+    .gif {
+        width: 100vw;   
+    }
+    .imgg {
+        transform: scale(0.8);
+    }
+    .transi {
+        flex-direction: column;
+    }
+    .transi .gif {
+        width: 60%;
+    }
+}
+@media (max-width: 330px) {
+    
+    .text {
+        width: 100%;
+    }
+}
+@media (max-width: 680px) {
+    
+    .text {
+        width: 100%;
+    }
+}
+@media (max-height: 870px) {
+    
+    .bigCont {
+        height: 240vh;
+    }
+}
+@media (max-height: 790px) {
+    
+    .bigCont {
+        height: 280vh;
+    }
+}
+@media (max-height: 680px) {
+    
+    .bigCont {
+        height: 320vh;
+    }
+}
+@media (max-height: 740px) {
+    
+    .text {
+        width: 100%;
+    }
+}
+@media (max-height: 620px) {
+    
+    .text {
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+.awards {
+    width: 100%;
+    height: 31vh;
+    background-color: #090d13;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+.award:hover {
+    transform: scale(0.9);
+}
+.award {
+    transition: 0.2s;
+    cursor: pointer;
+}
+.aa {
+    position: absolute;
+    text-decoration: none;
+}
+.galerie {
+    width: 100%;
+    height: 50vh;
+    background: url(/Ressources/dungeon-texture-gradient.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.galerieImage {
+    position: relative;
+    z-index: 1000;
+    height: 40%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 5px 2px;
+}
+.galerieImage:nth-child(1) {
+    position: relative;
+    z-index: 1000;
+    height: 40%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 5px 2px;
+}
+.galerieImage:hover {
+    position: relative;
+    height: 60%;
+}
+.galerieTitle {
+    position: absolute;
+    z-index: 100;
+    color:wheat;
+    align-self: flex-start;
+}
+@media (max-width: 1370px) {
+    .galerie {
+        height: 100vh;
+    }
+    .galerieImage {
+        height: 20%;
+    }
+    .galerieImage:hover {
+        height: 30%;
+    }
+}
+@media (max-width: 800px) {
+    .galerie {
+        height: 100vh;
+    }
+    .galerieImage {
+        height: 20%;
+    }
+    .galerieImage:hover {
+        height: 23%;
+    }
+}
+@media (max-width: 750px) {
+    .galerie {
+        height: 100vh;
+    }
+    .galerieImage {
+        height: 20%;
+    }
+    .galerieImage:hover {
+        height: 20%;
+    }
+}
+@media (max-width: 700px) {
+    .galerie {
+        height: 200vh;
+    }
+    .galerieImage {
+        height: 10%;
+    }
+    .galerieImage:hover {
+        height: 10%;
+    }
+}
+.headerDlc {
+    height: 84%;
+    position: absolute;
+    order: 2;
+    cursor: pointer;
+    margin: 0 auto;
+    left:50%;
+    transform: translateX(-50%);
+    margin-top: 9px;
+}
+.aaa {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+.burger {
+    width: 100%;
+    height: 100%;
+    background-color: #1b283800;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 777px ) {
+    .minilogo {
+        display: none;
+    }
+    .headerDlc {
+        display: none;
+    }
+    .header {
+        background: #1b28381a;
+        box-shadow: rgba(0, 0, 0, 0) 0 2px 2px 2px;
+    }
+    .burger {
+        display: flex;
+    }
+}
+
+.burger:hover .logo{
+    display: block;
+    animation: header2 0.4s ease-in-out forwards;
+}
+.burger:hover .logo2 {
+    display: block;
+    animation: header 0.4s ease-in-out forwards;
+}
+.burger:hover {
+    background-color: #1b2838;
+}
+
+
+.logo {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: none;
+    position: absolute;
+    bottom: -100px;
+    background: url(/Ressources/1_Header.gif);
+    background-color: #1b2838;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.4s;
+    transform: translateY(-99px);
+    z-index: -9;
+}
+@keyframes header {
+    to {
+        transform: translateY(199px);
+    }
+}
+@keyframes header2 {
+    to {
+        transform: translateY(0px);
+    }
+}
+.logo2 {
+    width: 100%;
+    height: 100px;
+    display: none;
+    position: absolute;
+    background: url(/Ressources/minilogo-3-2.png);
+    background-color: #1b2838;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -10;
+    transform: translateY(0px);
+    
+    
+}
+.fa-align-justify {
+    color: whitesmoke;
+}
+@keyframes start {
+    to {
+        transform: translateY(0px);
+    }
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}

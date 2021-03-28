@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #292929;
+    position: relative;
+}
+.nav {
+    display: flex;
+    height: 90px;
+    transition: 0.2s;
+}
+.item {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.item:nth-child(1) {
+    flex-grow: 1;
+    text-align: center;
+    border: rgb(0, 255, 200) solid;
+    transition: 0.2s;
+}
+.item:hover:nth-child(1) {
+    flex-grow: 1;
+    text-align: center;
+    border: rgb(0, 255, 200) solid;
+    background: rgb(0, 189, 148);
+    transition: 0.2s;
+}
+.item:hover:nth-child(1) .sousItem {
+    flex-grow: 1;
+    text-align: center;
+    border: rgb(0, 255, 200) solid;
+    background: rgb(0, 189, 148);
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    transition: 0.2s;
+    
+}
+.sousItem{
+    display: none;
+    transition: 0.2s;
+}
+.item:hover h1 {
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+.item:nth-child(2) {
+    flex-grow: 1;
+    text-align: center;
+    border: rgb(217, 255, 0) solid;
+    transition: 0.2s;
+}
+.item:hover:nth-child(2) {
+    flex-grow: 1;
+    text-align: center;
+    border: rgb(217, 255, 0) solid;
+    background-color: rgb(165, 194, 0);
+    transition: 0.2s;
+}
+.item:nth-child(3) {
+    flex-grow: 1;
+    text-align: center;
+    border: rgb(255, 94, 0) solid;
+    transition: 0.2s;
+}
+.item:hover:nth-child(3) {
+    flex-grow: 1;
+    text-align: center;
+    border: rgb(255, 94, 0) solid;
+    background: rgb(211, 77, 0);
+    transition: 0.2s;
+}
+.item:nth-child(4) {
+    flex-grow: 1;
+    text-align: center;
+    border: rgb(132, 0, 255) solid;
+    transition: 0.2s;
+}
+.item:hover:nth-child(4) {
+    flex-grow: 1;
+    text-align: center;
+    border: rgb(132, 0, 255) solid;
+    background: rgb(104, 0, 202);
+    transition: 0.2s;
+}
+h1 {
+    color: wheat;
+}
+a {
+    text-decoration: none;
+}
+

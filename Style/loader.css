@@ -1,0 +1,67 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(179, 231, 127);
+    height: 100vh;
+}
+.img1 {
+    margin: 0 10px;
+    position: relative;
+    animation-name: loader;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+.img2 {
+    margin: 0 10px;
+    position: relative;
+    animation-name: loader;
+    animation-delay: 0.2s;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+.img3 {
+    margin: 0 10px;
+    position: relative;
+    animation-name: loader;
+    animation-delay: 0.4s;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+.img4 {
+    margin: 0 10px;
+    position: relative;
+    animation-name: loader;
+    animation-delay: 0.6s;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+.img:hover {
+
+}
+
+@keyframes loader {  
+    80% {
+        transform: translateY(-10px);
+    }
+}

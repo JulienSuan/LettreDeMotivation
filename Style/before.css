@@ -1,0 +1,36 @@
+*, ::before ::after {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+}
+.contain {
+    color: whitesmoke;
+    background-color: teal;
+    text-align: center;
+    animation: 1s test;
+    animation-iteration-count: infinite;
+    transition: 0.2s;
+    height: 100vh;
+}
+.contain:hover {
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+@keyframes test {
+    to {
+        transform: rotate(99999deg);
+    }
+}

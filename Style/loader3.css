@@ -1,0 +1,53 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+body {
+    background: #292929;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont {
+    width: 500px;
+    height: 100px;
+    background: rgba(233, 233, 233, 0);
+    border-right: black solid 10px;
+    border-left: black solid 10px;
+    display: flex;
+}
+.circle {
+    width: 100px;
+    background: blanchedalmond;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim {
+    10% {
+        width: 100px;
+    }
+    40% {
+        width: 100px;
+        transform: translateX(380px);
+    }
+    50% {
+        width: 50px;
+        transform: translateX(430px);
+    }
+    60% {
+        width: 100px;
+        transform: translateX(380px);
+    }
+    90% {
+        width: 100px;
+    }
+    100% {
+        width: 50px;
+    }
+
+}
