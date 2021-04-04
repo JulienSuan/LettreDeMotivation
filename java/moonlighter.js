@@ -36,5 +36,13 @@ $(document).ready(function(){
             "slow")
 
     })
+    window.onscroll = function () {
+        if (document.documentElement.scrollTop > 980) {
+            header.style.background = "#292929";
+        }
+        else {
+            header.style.background = "red";
+        }
+    }
 });
 
