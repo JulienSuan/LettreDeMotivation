@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background: #092530;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+.header {
+    width: 100%;
+    height: 15vh;
+    background: url(/Ressources/DzENEX3XgAAbMXD.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 25px;
+    background-color: #092530;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: rgba(0,0,0,0.5) 0px 5px 5px 5px;
+}
+
+.menu {
+    color: whitesmoke;
+    margin:0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+    transition: 0.2s;
+}
+.menu-move {
+    color:#092530;
+}
+.menu-move2 {
+    color:whitesmoke
+}
+.menu:hover {
+    background: rgba(245, 245, 245, 0.877);
+    color: #092530;
+}
+.nav {
+    position: absolute;
+    width: 80%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: whitesmoke solid 1px;
+    border-bottom: whitesmoke solid 1px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+.nav-move {
+    animation: move 0.6s forwards ease-in-out;
+    border-top: #092530 solid 1px;
+    border-bottom: #092530 solid 1px;
+}
+.nav-move2 {
+    border-top: whitesmoke solid 1px;
+    border-bottom: whitesmoke solid 1px;
+}
+.menu-move:hover {
+    background: #092530b7;
+    color: whitesmoke
+}
+.menu-move2:hover {
+    background: rgb(245, 245, 245);
+    color: #092530 ;
+}
+@keyframes move {
+    0% {
+        top:-50px;
+        position: fixed;
+    }
+    100% {
+        top:10px;
+        position: fixed;
+    }
+}
+.main {
+    height: 100vh;
+    width: 100%;
+    background: url(../Ressources/en2ilgvznd051.jpg);
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-sec {
+    width: 00%;
+    height: 10px;
+    background: #092530;
+    border: whitesmoke solid 1px;
+    box-shadow: rgba(0,0,0,0.5) 2px 2px 2px;
+    border-radius: 10px;
+    animation: load forwards 0.4s 0.6s cubic-bezier(.73,.07,.4,1.4);
+}
+@keyframes load {
+    to {
+        width: 30%;
+    }    
+}
+.image-hover {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+}
+.image-hover:hover .img {
+    transform: rotateY(180deg) scale(1.1);
+}
+.img {
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.test {
+    background: #092530;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.2s;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: solid 2px #ffffff;
+    color: whitesmoke
+}
+.image-hover:hover .test {
+    opacity: 1;
+    z-index: 1;
+    transform: rotateY(180deg) scale(1.1);
+    box-shadow: rgba(0,0,0,0.5) 0 0 10px 5px;
+}
+.testt {
+    transform: rotateY(180deg);
+}
+
+            /* Page de motivation  */
+
+
+#motivation {
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    overflow: hidden;
+}
+.motivation-text {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.3em;
+    opacity: 0;
+    transform: translateX(400px);
+}
+.motivation-text2 {
+    animation: title2 1s forwards ease-in-out;
+}
+@keyframes title2 {
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+a {
+    text-decoration: none;
+    color: yellowgreen;
+}
+a:visited {
+    text-decoration: none;
+}
+.motivation-title {
+    text-align: center;
+    color: whitesmoke;
+    margin:0;
+    margin-bottom: 100px;
+    font-size: 5em;
+    transform: translateX(-400px);
+    opacity: 0;
+}
+.motivation-title2 {
+    animation: title 1s forwards ease-in-out;
+}
+@keyframes title {
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+.img2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(0.4);
+}
+.img2 img {
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.img2-show {
+    transform: scale(1);
+    opacity: 1;
+}
+.img2 img:hover  {
+    transform: scale(1.05);
+}
+.img2 img:active  {
+    transform: scale(1);
+}
+.transi1 {
+    height: 5vh;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(9,37,48,1) 0%, rgba(9,37,48,1) 50%, rgba(5,19,20,1) 100%);
+    box-shadow: rgba(0,0,0,0.5) 10 0 10px 10px;
+}
+.transi-img {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../Ressources/13-133560_my-neighbor-totoro-desktop.jpg);
+}
+#interets {
+    width: 100%;
+    height: 100vh;
+    background: #061415;
+    overflow: hidden;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.interets-title {
+    text-align: center;
+    color: whitesmoke;
+    margin:0;
+    margin-bottom: 100px;
+    font-size: 5em;
+    transform: translateX(400px);
+    opacity: 0;
+    align-self: flex-start;
+    position: absolute;
+}
+.interets-title2 {
+    animation: title 1s forwards ease-in-out;
+}
+.inter {
+    margin-top: 100px;
+    width: 450px;
+    height: 650px;
+    background:#2e3a5d;
+    transform: scale(0.5);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: dotted whitesmoke 1px;
+    cursor: pointer;
+}
+.inter-title {
+    width: 100%;
+    height: 40vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title0 {
+    background-image: url(../Ressources/insolite-japon-des-gifs-animes-representant-le-quotidien-des-japonais-2-1.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.title1 {
+    background-image: url(../Ressources/zelda-bateau-pixel-art.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.title2 {
+    background-image: url(../Ressources/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f354d527574634c655150647133773d3d2d3139332e313536386530613137643531396639613837323.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.inter-anim {
+    animation: inter 0.8s forwards cubic-bezier(.73,.07,.4,1.4);
+}
+.inter-text {
+    height: 80vh;
+    width: 100%;
+    padding: 0 40px;
+    color:whitesmoke;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+.interr {
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0,0,0,0.5) 2px 2px 2px;
+    font-size: 2.5em;
+}
+@keyframes inter {
+
+    50% {
+        transform: scale(1.25);
+    }
+    70% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    90% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+
+
+}
