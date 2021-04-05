@@ -336,3 +336,89 @@ a:visited {
 
 
 }
+.projet {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Ressources/Zelda.no.Densetsu_.Kaze.no.Takuto.full.2638931.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projet-title {
+    font-size: 8em;
+    color: whitesmoke;
+    text-shadow: rgba(0, 0, 0, 0.76) 2px 2px 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 40px 80px;
+    transform: scale(0.8);
+}
+.projet-title-anim {
+    animation: Atitle cubic-bezier(.73,.07,.4,1.4) 0.6s forwards;
+}
+@keyframes Atitle {
+    to {
+        transform: scale(1);
+    }
+}
+.projet-title1 {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    border-top: whitesmoke 6px solid;
+    border-right: whitesmoke 6px solid;
+    transition: 0.6s;
+    top:0;
+    right: 0;
+    opacity: 0;
+}
+.projet-title1-anim {
+    animation: Ptitle 1s forwards cubic-bezier(.73,.07,.4,1.4);
+}
+.projet-title2 {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    border-bottom: whitesmoke 6px solid;
+    border-left: whitesmoke 6px solid;
+    transition: 0.6s;
+    bottom:0;
+    left: 0;
+    opacity: 0;
+}
+.projet-title2-anim {
+    animation: Ptitle 1s forwards cubic-bezier(.73,.07,.4,1.4);
+} 
+@keyframes Ptitle {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        width: 100%;
+        height: 0%;
+    }
+    99% {
+        box-shadow: rgba(0, 0, 0, 0) 2px 2px 2px;
+    }
+    100% {
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        box-shadow: rgba(0, 0, 0, 0.76) 2px 2px 2px;
+    }
+}
+.projet2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}

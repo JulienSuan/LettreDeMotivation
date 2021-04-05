@@ -6,6 +6,9 @@ $(document).ready(function(){
     $(".transi-img").parallaxie({
         speed: 0.8,
     });
+    $(".projet").parallaxie({
+        speed: 0.8,
+    });
 
     window.onscroll = function () {
         if (document.documentElement.scrollTop > 140) {
@@ -48,7 +51,21 @@ $(document).ready(function(){
         } else {
             $(".inter").removeClass("inter-anim")
         }
-        
+        if (document.documentElement.scrollTop > 3200) {
+            $(".projet-title1").addClass("projet-title1-anim");
+        } else {
+            $(".projet-title1").removeClass("projet-title1-anim");
+        }
+        if (document.documentElement.scrollTop > 3200) {
+            $(".projet-title2").addClass("projet-title2-anim");
+        } else {
+            $(".projet-title2").removeClass("projet-title2-anim");
+        }
+        if (document.documentElement.scrollTop > 3200) {
+            $(".projet-title").addClass(".projet-title-anim");
+        } else {
+            $(".projet-title").removeClass(".projet-title-anim");
+        }    
     }
     $(".menu:nth(0)").click(function(){
 
@@ -66,6 +83,14 @@ $(document).ready(function(){
             "slow")
 
     })
+    $(".menu:nth(2)").click(function(){
+
+        $("html,body").animate({
+            scrollTop: $(".projet").offset().top
+        },
+            "slow")
+
+    })
     TweenMax.to(".nav", 2, {
         opacity: 1,
         y: 0,
@@ -76,4 +101,5 @@ $(document).ready(function(){
         opacity: 1,
         ease: Expo.easeInOut,
     })
+
 })
