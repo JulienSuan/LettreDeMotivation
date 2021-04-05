@@ -58,16 +58,19 @@ $(document).ready(function(){
         }
         if (document.documentElement.scrollTop > 3200) {
             $(".projet-title2").addClass("projet-title2-anim");
+            $(".projet-title").addClass("projet-title-anim");
         } else {
             $(".projet-title2").removeClass("projet-title2-anim");
+            $(".projet-title").removeClass("projet-title-anim");
         }
-        if (document.documentElement.scrollTop > 3200) {
-            $(".projet-title").addClass(".projet-title-anim");
+        if (document.documentElement.scrollTop > 3800) {
+            $(".imgg").addClass("imgg-anim");
+            $(".intro").addClass("intro-anim");
         } else {
-            $(".projet-title").removeClass(".projet-title-anim");
-        }    
+            $(".imgg").removeClass("imgg-anim");
+        }
     }
-    $(".menu:nth(0)").click(function(){
+    $(".menu1").click(function(){
 
         $("html,body").animate({
             scrollTop: $("#motivation").offset().top
@@ -75,7 +78,7 @@ $(document).ready(function(){
             "slow")
 
     })
-    $(".menu:nth(1)").click(function(){
+    $(".menu11").click(function(){
 
         $("html,body").animate({
             scrollTop: $("#interets").offset().top
@@ -83,10 +86,18 @@ $(document).ready(function(){
             "slow")
 
     })
-    $(".menu:nth(2)").click(function(){
+    $(".menu3").click(function(){
 
         $("html,body").animate({
             scrollTop: $(".projet").offset().top
+        },
+            "slow")
+
+    })
+    $(".menu4").click(function(){
+
+        $("html,body").animate({
+            scrollTop: $(".contact").offset().top
         },
             "slow")
 
@@ -100,6 +111,9 @@ $(document).ready(function(){
         delay: 0.5,
         opacity: 1,
         ease: Expo.easeInOut,
+    })
+    $(".burger").click(function(){
+        $(".menuBurger").toggleClass("menuBurgerB")
     })
 
 })
