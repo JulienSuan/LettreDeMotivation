@@ -213,11 +213,13 @@ a:visited {
     transition: 1s;
     cursor: pointer;
     transform: scale(0.4);
+    flex-wrap: wrap;
 }
 .imageLogo {
     width: 80%;
     position: absolute;
     bottom: 0;
+    flex-shrink: 3;
 }
 .langProg {
     color:whitesmoke
@@ -599,6 +601,9 @@ a:visited {
     .projet-title {
         font-size: 4em;
     }
+    .motivation-text {
+        font-size: 1em;
+    }
     .nav .menu {
         display: none;
     }
@@ -615,6 +620,9 @@ a:visited {
 @media (max-width:768px) {
     .projet-title {
         font-size: 4em;
+    }
+    .motivation-text {
+        font-size: 1em;
     }
     .nav .menu {
         display: none;
